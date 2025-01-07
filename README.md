@@ -1,5 +1,5 @@
 # Setup Changedetection on k3s
-* 
+* https://changedetection.io/
 
 ## Prepare config
 ```
