@@ -7,7 +7,7 @@
 NAMESPACE=changedetection
 
 # Public URL
-FQDN=converter.domain.tld
+FQDN=changedetection.domain.tld
 ```
 
 ## create runtime config from template
