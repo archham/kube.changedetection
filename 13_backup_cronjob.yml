@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: changedetection-backup
-  namespace: changedetection
+  namespace: __NAMESPACE__
 spec:
   schedule: "0 2 * * *" # Run daily at 2 AM
   jobTemplate:

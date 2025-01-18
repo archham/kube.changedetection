@@ -4,10 +4,10 @@
 ## Prepare config
 ```
 # Project namespace
-NAMESPACE=converter
+NAMESPACE=changedetection
 
 # Public URL
-FQDN=converter.domain.tld
+FQDN=changedetection.domain.tld
 ```
 
 ## create runtime config from template
@@ -39,10 +39,11 @@ DONE
 all templates created in ./runtime
 please review them and apply config
 
+cd ./runtime/
 for y in *.yml
 do
-  echo \$y
-  kubectl apply -f \$y
+  echo $y
+  kubectl apply -f $y
 done"
 
 ```

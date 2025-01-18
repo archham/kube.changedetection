@@ -7,7 +7,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: backup-role
-  namespace: changedetection
+  namespace: __NAMESPACE__
 rules:
   - apiGroups: ["apps"]
     resources: ["deployments/scale"]
@@ -20,7 +20,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: backup-rolebinding
-  namespace: changedetection
+  namespace: __NAMESPACE__
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -28,5 +28,5 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: backup-serviceaccount
-    namespace: changedetection
+    namespace: __NAMESPACE__
 
