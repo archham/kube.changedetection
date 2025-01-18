@@ -4,7 +4,7 @@
 ## Prepare config
 ```
 # Project namespace
-NAMESPACE=converter
+NAMESPACE=changedetection
 
 # Public URL
 FQDN=converter.domain.tld
@@ -41,8 +41,8 @@ please review them and apply config
 
 for y in *.yml
 do
-  echo \$y
-  kubectl apply -f \$y
+  echo $y
+  kubectl apply -f $y
 done"
 
 ```
