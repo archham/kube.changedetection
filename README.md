@@ -39,6 +39,7 @@ DONE
 all templates created in ./runtime
 please review them and apply config
 
+cd ./runtime/
 for y in *.yml
 do
   echo $y
