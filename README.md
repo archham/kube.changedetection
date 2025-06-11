@@ -30,20 +30,18 @@ FQDN=$FQDN
 
 ls -l ./runtime
 
-```
-## setup application
-```
 echo "
 DONE
 
 all templates created in ./runtime
 please review them and apply config
 
-cd ./runtime/
+cd runtime
+
 for y in *.yml
 do
-  echo $y
-  kubectl apply -f $y
+  echo \$y
+  kubectl apply -f \$y
 done"
 
 ```

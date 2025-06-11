@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sockpuppet
+  namespace: __NAMESPACE__
+  labels:
+    app: sockpuppet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sockpuppet
+  template:
+    metadata:
+      labels:
+        app: sockpuppet
+    spec:
+      containers:
+      - name: sockpuppet
+        image: dgtlmoon/sockpuppetbrowser:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: DEFAULT_LAUNCH_ARGS
+          value: '["--window-size=1920,1080"]'
+        volumeMounts:
+        - name: dshm
+          mountPath: /dev/shm
+      volumes:
+      - name: dshm
+        emptyDir:
+          medium: Memory
+

@@ -27,6 +27,9 @@ spec:
       - image: ghcr.io/dgtlmoon/changedetection.io:latest
         imagePullPolicy: IfNotPresent
         name: changedetection-io
+        env:
+          - name: PLAYWRIGHT_DRIVER_URL
+            value: ws://sockpuppet:3000
         ports:
         - containerPort: 5000
           protocol: TCP
