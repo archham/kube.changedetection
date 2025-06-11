@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: sockpuppet
-        image: dgtlmoon/sockpuppetbrowser:latest
+        image: docker.io/dgtlmoon/sockpuppetbrowser:latest
         ports:
         - containerPort: 3000
         env:
