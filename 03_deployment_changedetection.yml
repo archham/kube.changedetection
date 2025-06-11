@@ -24,7 +24,7 @@ spec:
         deployment: changedetection-io
     spec:
       containers:
-      - image: ghcr.io/dgtlmoon/changedetection.io:latest
+      - image: docker.io/dgtlmoon/changedetection.io:latest
         imagePullPolicy: IfNotPresent
         name: changedetection-io
         env:
