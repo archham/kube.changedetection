@@ -20,6 +20,11 @@ spec:
         image: docker.io/dgtlmoon/sockpuppetbrowser:latest
         ports:
         - containerPort: 3000
+      resources:
+        requests:
+          memory: "512Mi"
+        limits:
+          memory: "2Gi"
         env:
         - name: DEFAULT_LAUNCH_ARGS
           value: '["--window-size=1920,1080"]'
