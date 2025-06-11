@@ -29,13 +29,13 @@ spec:
         - name: DEFAULT_LAUNCH_ARGS
           value: '["--window-size=1920,1080"]'
         - name: SCREEN_WIDTH
-          value: 1920
+          value: '1920'
         - name: SCREEN_HEIGHT
-          value: 1080
+          value: '1080'
         - name: SCREEN_DEPTH
-          value: 16
+          value: '16'
         - name: MAX_CONCURRENT_CHROME_PROCESSES
-          value: 10
+          value: '10'
         volumeMounts:
         - name: dshm
           mountPath: /dev/shm
